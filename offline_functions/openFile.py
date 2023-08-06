@@ -1,8 +1,9 @@
-def sayhello():
-    print('hello')
+import subprocess
 
 
-def openFile():
-    pass
+def openFile(path):
+
+    subprocess.Popen(path)
+
 
 
