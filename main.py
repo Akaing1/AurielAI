@@ -1,7 +1,6 @@
-import offline_functions
-import online_functions
 from offline_functions import openFile
 from online_functions import checkWeather
+from online_functions import  googleSearch
 
 
 def testOpenFile():
@@ -10,10 +9,13 @@ def testOpenFile():
 
 
 def testCheckWeather():
-    temp = checkWeather.getTemperature('morrisville')
-    print(temp)
-    '''details = checkWeather.getAllDetails('morrisville')
-    print(details)'''
+    details = checkWeather.getAllDetails('morrisville')
+    print(details[0], details[1], details[2])
 
 
-testCheckWeather()
+def testGoogleSearch():
+    search = googleSearch.googleSearch('league of legends')
+    print(search)
+
+
+testGoogleSearch()
