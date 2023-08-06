@@ -1,6 +1,6 @@
 from offline_functions import openFile
 from online_functions import checkWeather
-from online_functions import  googleSearch
+from online_functions import googleSearch
 
 
 def testOpenFile():
