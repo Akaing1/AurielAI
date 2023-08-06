@@ -1,21 +1,10 @@
-from offline_functions import openFile
-from online_functions import checkWeather
-from online_functions import googleSearch
+from tests import onlineFunctionsTester
+from tests import offlineFunctionsTester
 
 
-def testOpenFile():
-    openFile.openFile('"C:\\Riot Games\\Riot Client\\RiotClientServices.exe" --launch-product=league_of_legends '
-                      '--launch-patchline=live')
+def run():
+    onlineFunctionsTester.runTests()
+    offlineFunctionsTester.runTests()
 
 
-def testCheckWeather():
-    details = checkWeather.getAllDetails('morrisville')
-    print(details[0], details[1], details[2])
-
-
-def testGoogleSearch():
-    search = googleSearch.googleSearch('league of legends')
-    print(search)
-
-
-testGoogleSearch()
+run()
