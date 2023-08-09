@@ -11,3 +11,4 @@ General use desktop PA
 - Time/Alarm
 - Check stock market
 - Shopping sales
+- Play music
